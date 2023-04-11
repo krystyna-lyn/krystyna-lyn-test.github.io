@@ -1,690 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <main>
-      <!-- Sidebar -->
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img src="./images/avatar-krys.jpg" alt="krystyna" width="80" />
-          </figure>
-          <div class="info-content">
-            <h1 class="name" title="Krystyna">Krystyna</h1>
-            <p class="title">Web Developer</p>
-          </div>
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./images/avatar-krys.jpg" alt="krystyna" width="80" />
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Krystyna">Krystyna</h1>
+          <p class="title">Web Developer</p>
         </div>
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:krystyna@gmx.de" class="contact-link">krystyna@gmx.de</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+491767869397" class="contact-link">+49 1767869397 </a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">August 18, 1989</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Berleben, DE</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+
+          <p>
+            Hi, I'm Krystyna. My job is to build your website so that it is functional and
+            user-friendly but at the same time attractive. Moreover, I add
+            personal touch to your product and make sure that is eye-catching
+            and easy to use. My aim is to bring across your message and
+            identity in the most creative way. I enjoy turning
+            complex problems into simple, beautiful and intuitive designs.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./images/icon-design.svg" alt="" width="40" />
               </div>
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-                <a href="mailto:krystyna@gmx.de" class="contact-link"
-                  >krystyna@gmx.de</a
-                >
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
               </div>
             </li>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./images/icon-dev.svg" alt="Web development icon" width="40" />
               </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
 
-                <a href="tel:+491767869397" class="contact-link"
-                  >+49 1767869397 </a
-                >
-              </div>
-            </li>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">August 18, 1989</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Berleben, DE</address>
               </div>
             </li>
           </ul>
-          <div class="separator"></div>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTML, CSS, Bootstrap</h5>
+                <data value="80"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%"></div>
+              </div>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="70"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%"></div>
+              </div>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Angular</h5>
+                <data value="50"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%"></div>
+              </div>
             </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="70"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">PHP, MySQL</h5>
+                <data value="70"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%"></div>
+              </div>
+            </li>
+
           </ul>
+        </section>
+
+
+        <!-- modal -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+
+            </button>
+
+          </section>
         </div>
-      </aside>
 
-      <div class="main-content">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+      </article>
+
+      <!-- Resume -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Professional training web development
+              </h4>
+              <span>09.19 - 05.2020</span>
+              <p class="timeline-text">
+                COMCAVE COLLEGE, Magdeburg
+              </p>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Training course in Marketing & Management
+              </h4>
+
+              <span>03.19 - 08.19
+              </span>
+
+              <p class="timeline-text">
+                Wolmirstedt IMM Marketing & Management
+              </p>
             </li>
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Bachelor of Arts Industrial Design
+              </h4>
+
+              <span>2014 - 2015</span>
+
+              <p class="timeline-text">
+                University Magdeburg-Stendal
+              </p>
             </li>
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Design
+              </h4>
+
+              <span>2012 - 2013</span>
+
+              <p class="timeline-text">
+                College of Further Education BBS Haldensleben
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                practical-oriented education in media technology
+              </h4>
+
+              <span>2010 - 2012</span>
+
+              <p class="timeline-text">
+                College of Further Education BBS Haldensleben
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-iem-title">Junior web developer</h4>
+              <span>11.2021 - 09.2022</span>
+              <p class="timeline-text">
+                FIWHA Management GmbH, Dortmund
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intern web development</h4>
+
+              <span>08.2021 - 10.2021</span>
+
+              <p class="timeline-text">
+                FIWHA Management GmbH, Dortmund
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intern web design</h4>
+
+              <span>04.2019 - 06.2019</span>
+
+              <p class="timeline-text">
+                Werbeagentur Plus Zee, Magdeburg
+              </p>
+            </li>
+          </ol>
+        </section>
+
+
+      </article>
+
+      <!-- Portfolio -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
             </li>
           </ul>
-        </nav>
-
-        <!-- About -->
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-          <section class="about-text">
-            
-            <p>
-              Hi, I'm Krystyna. My job is to build your website so that it is functional and
-              user-friendly but at the same time attractive. Moreover, I add
-              personal touch to your product and make sure that is eye-catching
-              and easy to use. My aim is to bring across your message and
-              identity in the most creative way. I enjoy turning
-              complex problems into simple, beautiful and intuitive designs.
-            </p>
-          </section>
-
-          <section class="service">
-            <h3 class="h3 service-title">What I'm doing</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./images/icon-design.svg" alt="" width="40" />
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
-                 
-                </div>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>
+                Select category
+              </div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
               </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  
-                </div>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
               </li>
             </ul>
-          </section>
-
-          <!-- SKILLS -->
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">HTML, CSS, Bootstrap</h5>
-                  <data value="80"></data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">JavaScript</h5>
-                  <data value="70"></data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 60%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Angular</h5>
-                  <data value="50"></data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 50%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">WordPress</h5>
-                  <data value="70"></data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 60%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">PHP, MySQL</h5>
-                  <data value="70"></data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-              
-            </ul>
-          </section>
-
-
-          <!-- modal -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-               
-              </button>           
-           
-            </section>
           </div>
 
-        </article>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./images/project-1.jpg" alt="finance" loading="lazy" data-project-image />
+                </figure>
+                <h3 class="project-title">Music App</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-        <!-- Resume -->
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Education</h3>
-            </div>
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  COMCAVE COLLEGE, Magdeburg 
-                </h4>
-                <span>09.19 - 05.2020</span>
-                <p class="timeline-text">
-                  Professional training web development
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Wolmirstedt
-                </h4>
-
-                <span>03.19 - 08.19
-                </span>
-
-                <p class="timeline-text">
-                  IMM Marketing & Management
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Fachhochschule Magdeburg-Stendal
-                </h4>
-
-                <span>2014 - 2015</span>
-
-                <p class="timeline-text">
-                  Bachelor of Arts Industrial Design
-                </p>
-              </li>
-            </ol>
-          </section>
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Experience</h3>
-            </div>
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-iem-title">Junior web developer</h4>
-                <span>11.2021 - 09.2022</span>
-                <p class="timeline-text">
-                  FIWHA Management GmbH, Dortmund
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Intern web development</h4>
-
-                <span>08.2021 - 10.2021</span>
-
-                <p class="timeline-text">
-                  FIWHA Management GmbH, Dortmund 
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Intern web design</h4>
-
-                <span>04.2019 - 06.2019</span>
-
-                <p class="timeline-text">
-                  Werbeagentur Plus Zee, Magdeburg
-                </p>
-              </li>
-            </ol>
-          </section>
-
-      
-        </article>
-
-        <!-- Portfolio -->
-
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-select-value>
-                  Select category
-                </div>
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web design</button>
-                </li>  
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-                  <h3 class="project-title">Music App</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Architecture responsive web</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">NG Social media</h3>
-
-                  <p class="project-category">Web development Angular</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Travel Web</h3>
-
-                  <p class="project-category">Web Design Adobe XD</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Cartier Web</h3>
-
-                  <p class="project-category">Web Design Adobe XD</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Tires shop web</h3>
-
-                  <p class="project-category">Web design Adobe XD</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Waydrive cloud web</h3>
-
-                  <p class="project-category">Web design Adobe XD</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Infinity sunglasses</h3>
-
-                  <p class="project-category">Web design Adobe XD</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                      data-project-image
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Alpensport Web</h3>
-
-                  <p class="project-category">Web design Adobe XD</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-<!-- Modal for portfolio -->
-
-<div class="modal-container" data-modal-container1>
-  <div class="overlay" data-overlay1></div>
-  <section class="projects-modal">
-    <button class="modal-close-btn" data-modal-close-btn1>
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-    <div class="modal-img-wrapper">       
-        <img
-        src="#"
-        alt=""
-        width="600"
-        data-modal-img1
-        />
-    </div>
-  </section>
-</div>
-
-        </article>
-
-
-
-        </article>
-
-        <!-- Contact -->
-
-        <article class="contact " data-page="contact">
-            <header>
-                <h2 class="h2 article-title">Contact</h2>
-            </header>
-            <section class="mapbox" data-mapbox>
-                <figure>
-                    <iframe 
-                    src="https://maps.google.com/maps?q=barleben&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                    width="400" height="300" loading="lazy">
-                    </iframe>                  
+                  <img src="./images/project-2.png" alt="orizon" loading="lazy" data-project-image />
                 </figure>
 
-                
-            </section>
-            <section class="contact-form">
-                <h3 class="h3 form-title">Contact Form</h3>
-                <form action="#" class="form" data-form>
-                    <div class="input-wrapper">
-                        <input type="text" name="fullname" placeholder="Full name" class="form-input" required data-form-input>
-                        <input type="email" name="email" placeholder="Email address" class="form-input" required data-form-input>
-                    </div>
-                    <textarea name="message"  class="form-input" placeholder="Your Message" required data-form-input></textarea>
-                    <button class="form-btn" type="submit" disabled data-form-btn desabled>
-                        <ion-icon name="paper-plane"></ion-icon>
-                        <span>Send Message</span>
-                    </button>
-                </form>
-            </section>
-        </article>
-      </div>
-    </main>
+                <h3 class="project-title">Architecture responsive web</h3>
 
-    <!-- Script -->
-    <script src="./script.js"></script>
-    <!-- ion-icon script -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-3.jpg" alt="fundo" loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">NG Social media</h3>
+
+                <p class="project-category">Web development Angular</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-4.png" alt="brawlhalla" loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">Travel Web</h3>
+
+                <p class="project-category">Web Design Adobe XD</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-5.png" alt="dsm." loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">Cartier Web</h3>
+
+                <p class="project-category">Web Design Adobe XD</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-6.png" alt="metaspark" loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">Tires shop web</h3>
+
+                <p class="project-category">Web design Adobe XD</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-7.png" alt="summary" loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">Waydrive cloud web</h3>
+
+                <p class="project-category">Web design Adobe XD</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-8.jpg" alt="task manager" loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">Infinity sunglasses</h3>
+
+                <p class="project-category">Web design Adobe XD</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/project-9.png" alt="arrival" loading="lazy" data-project-image />
+                </figure>
+
+                <h3 class="project-title">Alpensport Web</h3>
+
+                <p class="project-category">Web design Adobe XD</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Modal for portfolio -->
+
+        <div class="modal-container" data-modal-container1>
+          <div class="overlay" data-overlay1></div>
+          <section class="projects-modal">
+            <button class="modal-close-btn" data-modal-close-btn1>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <img src="#" alt="" width="600" data-modal-img1 />
+            </div>
+          </section>
+        </div>
+
+      </article>
+
+
+
+      </article>
+
+      <!-- Contact -->
+
+      <article class="contact " data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://maps.google.com/maps?q=barleben&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400"
+              height="300" loading="lazy">
+            </iframe>
+          </figure>
+
+
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" placeholder="Full name" class="form-input" required data-form-input>
+              <input type="email" name="email" placeholder="Email address" class="form-input" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn desabled>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+  <!-- ion-icon script -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
