@@ -709,6 +709,7 @@ main {
 
 .modal-img-wrapper > img {
   display: none;
+  border-radius: 10px;
 }
 
 .modal-title {
