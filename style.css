@@ -947,6 +947,10 @@ main {
   display: none;
 }
 
+.video {
+  width: 50%;
+}
+
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
